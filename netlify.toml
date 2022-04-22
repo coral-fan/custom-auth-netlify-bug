@@ -3,5 +3,6 @@ command = "next build"
 publish = ".next"
 
 [functions]
-  node_bundler = "esbuild"
-  external_node_modules = ["@toruslabs/customauth", "broadcast-channel", "microtime", "node-gyp-build"]
+included_files = ["node_modules/microtime/prebuilds/**"]
+node_bundler = "esbuild"
+external_node_modules = ["@toruslabs/customauth", "broadcast-channel", "microtime", "node-gyp-build"]
