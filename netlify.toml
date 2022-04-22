@@ -4,4 +4,4 @@ publish = ".next"
 
 [functions]
   node_bundler = "esbuild"
-  external_node_modules = ["microtime"]
+  external_node_modules = ["@toruslabs/customauth", "broadcast-channel", "microtime", "node-gyp-build"]
